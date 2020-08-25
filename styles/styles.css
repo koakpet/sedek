@@ -50,7 +50,7 @@
     }
 
     .logo {
-        width: 120px;
+        width: 90px;
         position: absolute;
         top: 66px;
     }
@@ -59,8 +59,8 @@
         font-family: "Comic San MS", cursive, sans-serif;
         font-size: 10px;
         position: absolute;
-        top: 153px;
-        right: 24px;
+        top: 145px;
+        left: 12px;
     }
 
     .contact-us {
