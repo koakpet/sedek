@@ -36,8 +36,12 @@
 }
 
 @media (max-width: 576px) {
+    body {
+        font-size: 15px;
+    }
+
     .body {
-        width: 576px;
+        width: 480px;
         margin: auto; 
     }
 
@@ -46,16 +50,17 @@
     }
 
     .logo {
-        width: 255px;
+        width: 130px;
+        position: absolute;
+        top: 66px;
     }
 
     .tagline {
         font-family: "Comic San MS", cursive, sans-serif;
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 10px;
         position: absolute;
-        top: 170px;
-        right: 39px;
+        top: 153px;
+        right: 21px;
     }
 
     .contact-us {
