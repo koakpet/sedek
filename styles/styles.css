@@ -65,10 +65,11 @@
 
     .contact-us {
         margin-top: 30px;
+	font-size: 9px;
     }
     .footer {
         font-family: "Times New Roman", Times, serif;
-        font-size: 12px;
+        font-size: 6px;
         margin-top: 12px;
     }    
 }
