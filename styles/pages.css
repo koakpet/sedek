@@ -1,0 +1,53 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.body {
+    width: 930px;
+    margin: auto;
+    text-align: justify;
+}
+
+.logo {
+    width: 90px;
+}
+
+.breadcrumb-style {
+    font-size: 12px;
+    margin: 3px;
+}
+
+.footer {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        font-size: 12px;
+    }
+
+    .body {
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .breadcrumb-style {
+        font-size: 9px;
+        margin: 3px;
+    } 
+
+    .footer {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 6px;
+        margin-top: 12px;
+    }    
+}
