@@ -118,10 +118,11 @@
 
 	<script id="details-template" type="text/x-handlbars-template">
 		<div class="row">
-			<div class="col-4">
-				<p class="text-right"><img src="{{src}}" alt="{{alt}}" class="img-thumbnail" width="120px"></p>
+			<div class="col-3">
+				<p class="text-right"><img src="{{src}}" alt="{{alt}}" class="img-thumbnail"></p>
 			</div>
-			<div class="col-8">
+			<div class="col-9">
+				<h5>{{title}}</h5>
 				<p>{{para_1}}</p>
 				<p>{{para_2}}</p>
 				<p>{{para_3}}</p>
@@ -138,42 +139,51 @@
 		
 		// define the data to be inserted into the template //
 		var dataMolded = {
-			src: "../images/placeholder_1.jpg",
+			src: "../images/molded_panel_1.jpeg",
 			alt: "Molded Panel Doors",
+			title: "Molded Panel Doors",
 			para_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus turpis eu diam laoreet, vel eleifend quam tempus. Aliquam id mi eleifend, varius lacus et, auctor massa. Donec hendrerit ornare nibh, sed venenatis nunc laoreet a. Maecenas in quam suscipit, auctor magna at, dignissim nisl. Nunc pretium tempus pharetra. Mauris fringilla lorem in lacus rutrum gravida. Phasellus placerat, tellus eget molestie imperdiet, odio mi tristique velit, vel faucibus ligula sapien eget massa",
 			para_2: "Proin nec auctor magna. Fusce a tortor facilisis, commodo massa vitae, ultricies ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin quis urna id nisl tempor faucibus. Nulla facilisi. Suspendisse porta risus eu diam molestie, ac congue neque pulvinar. Nam non elit non mauris luctus semper vel et justo. Fusce sit amet tristique massa, eu viverra mauris. Mauris accumsan pulvinar metus et egestas. Sed imperdiet feugiat massa sed imperdiet."
 		}
 		var dataFlush = {
-			src: "../images/placeholder_2.jpg",
+			src: "../images/flush_door_1.jpg",
 			alt: "Flush Doors",
+			title: "Flush Doors",
 			para_1: "Suspendisse eget nunc non odio auctor hendrerit. Integer vitae ipsum nec dolor convallis tristique. Ut luctus mauris magna, sed finibus velit mattis rhoncus. Nam nulla tellus, tempus vitae leo ornare, eleifend sollicitudin ante. Pellentesque consectetur, tortor sed ornare tincidunt, risus lorem convallis dui, non viverra tellus ipsum vel eros. Suspendisse rhoncus ante vel purus commodo consectetur. Suspendisse imperdiet semper justo. Nullam sed dolor pharetra, faucibus massa eu, dignissim libero. Aenean sed vehicula tellus. Quisque eu diam sed ipsum pellentesque vestibulum. Suspendisse congue quis mauris et cursus.",
 			para_2: "Morbi ac dignissim tortor, non blandit ipsum. Ut eget arcu et enim tincidunt porta at sed dui. Maecenas in lectus enim. Nunc eget suscipit lorem, quis rutrum diam. Donec vel purus non nulla porta feugiat at sed magna. Pellentesque vitae enim justo. Etiam dapibus fringilla est, ac molestie massa dictum eget. Vestibulum cursus erat at lectus vestibulum tempor."
 		}
 		var dataCabinets = {
-			src: "../images/placeholder_3.jpg",
+			src: "../images/cabinets.jpg",
 			alt: "Cabinets",
+			title: "Cabinets",
 			para_2: "Quisque dignissim gravida quam, sit amet lacinia orci. Suspendisse potenti. Donec sollicitudin ipsum consequat nulla blandit, at luctus erat viverra. Nulla tincidunt lacus nec sem bibendum mollis. Integer ornare commodo luctus. Suspendisse rhoncus est quis diam laoreet, non placerat arcu accumsan.",
 			para_3: "Cras congue ipsum ut porttitor viverra. Proin tincidunt dapibus massa, nec pretium odio volutpat a. Nulla imperdiet ante sem, at bibendum velit mattis non. Pellentesque dolor lectus, condimentum dictum felis vel, ullamcorper tristique orci. Etiam quis ultricies nibh. Nullam posuere a justo ac suscipit. Phasellus sed orci eu eros fringilla cursus sed sed nunc. Quisque viverra ligula quis purus aliquam ullamcorper. Phasellus eu lacus massa. Cras efficitur massa turpis, ut dapibus purus ultricies nec. Etiam tristique, diam vitae aliquet finibus, arcu orci fringilla augue, ac consequat leo sem nec libero. In laoreet sit amet libero nec egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 		}
 
-		// Using the click function, insert the details into the template at the click of the different buttons //
+		// Using the click function, insert the details of Molded Panel Doors into the template at the click of the "Molded Panel Doors" //
+		
+		// Insert the data of Molded Panel Doors into the template, thereby creating a new HTML code //
+		var moldedHtml = detailsTemplate(dataMolded);
+		// Insert the new HTML code created into the document //
+		$('#content').html(moldedHtml)
+
+		// Using the click function, insert the details of Molded Panel Doors into the template at the click of the "Molded Panel Doors" //
 		$("#molded_btn").click(function(){
-			// Insert the data of Molded Panel Doors into the template, thereby creating a new HTML code //
-			var html = detailsTemplate(dataMolded);
-			// Insert the new HTML code created into the document //
-			$('#content').html(html)
+			$('#content').html(moldedHtml)
 		})
 
+		// Using the click function, insert the details of Flush Doors into the template at the click of the "Flush Doors" //
 		$("#flush_btn").click(function(){
 			//insert the data of Flush Doors into the template, thereby creating a new HTML code //
-			var html = detailsTemplate(dataMolded);
+			var html = detailsTemplate(dataFlush);
 			// Insert the new HTML code created into the document //
 			$('#content').html(html)
 		})
 
+		// Using the click function, insert the details of Cabinets into the template at the click of the "Cabinets" //
 		$("#cabinets_btn").click(function(){
 			//insert the data of Flush Doors into the template, thereby creating a new HTML code //
-			var html = detailsTemplate(dataMolded);
+			var html = detailsTemplate(dataCabinets);
 			// Insert the new HTML code created into the document //
 			$('#content').html(html)
 		})
