@@ -5,7 +5,7 @@
 }
 
 .body {
-    width: 70%;
+    width: 930px;
     margin: auto; 
 }
 
@@ -14,7 +14,7 @@
 }
 
 .logo {
-    width: 255px;
+    width: 210px;
 }
 
 .tagline {
@@ -22,8 +22,8 @@
     font-size: 18px;
     font-weight: bold;
     position: absolute;
-    top: 170px;
-    right: 39px;
+    top: 150px;
+    left: 30px;
 }
 
 .contact-us {
@@ -35,7 +35,7 @@
     margin-top: 12px;
 }
 
-@media only screen and (max-width: 576px) and (min-width: 300px) {
+@media only screen and (max-width: 760px) {
     body {
         font-size: 12px;
     }
@@ -65,7 +65,7 @@
 
     .contact-us {
         margin-top: 30px;
-	font-size: 9px;
+        font-size: 9px;
     }
     .footer {
         font-family: "Times New Roman", Times, serif;
