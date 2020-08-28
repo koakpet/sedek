@@ -60,6 +60,12 @@
     padding: 12px 0 6px 0;
 }
 
+.hide-lg {
+    visibility: hidden;
+}
+
+
+
 @media only screen and (max-width: 760px) {
     body {
         font-size: 12px;
@@ -129,7 +135,7 @@
         background-color: #808080;
     }
 
-    .item-hid {
+    .hide-sm {
         visibility: hidden;
     }
 }
