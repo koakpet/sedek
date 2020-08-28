@@ -27,6 +27,7 @@
     left: 30px;
 }
 
+
 .shop-links {
     width: 840px;
     margin: auto;
@@ -74,26 +75,61 @@
     }
 
     .logo {
-        width: 75px;
+        width: 120px;
         position: absolute;
-        top: 66px;
+        top: 39px;
     }
 
     .tagline {
         font-family: "Comic San MS", cursive, sans-serif;
-        font-size: 6px;
+        font-size: 7px;
         position: absolute;
         top: 120px;
-        left: 21px;
+        left: 54px;
+    }
+
+    .shop-links {
+        width: 100%;
+        margin: auto;
+    }
+
+    .card {
+        position: relative;
+        width: 100%;
+        height: 160px;
+        margin: auto;
+        padding: auto;
+    }
+
+    .card-img-top {
+        float: right;
+        width: 30%;
+
+    }
+
+    .card-body {
+        position: absolute;
+        width: 70%;
+        text-align: left;
+        top: 3px;
+        left: 3px;
     }
 
     .contact-us {
+        border-top: 1px #808080 solid;
         margin-top: 30px;
         font-size: 9px;
+        background-color: #D3D3D3;
     }
     .footer {
         font-family: "Times New Roman", Times, serif;
         font-size: 6px;
         margin-top: 12px;
-    }    
+        border-top: 1px solid black;
+        background-color: #808080;
+    }
+
+    .item-hid {
+        visibility: hidden;
+    }
 }
